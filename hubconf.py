@@ -28,7 +28,8 @@ def test_data():
     test_dataloader = DataLoader(test_data, batch_size=batch_size)
     return train_dataloader,test_dataloader
 
-train_dataloader,test_dataloader = test_data()
+train_dataloader = DataLoader(training_data, batch_size=batch_size)
+test_dataloader = DataLoader(test_data, batch_size=batch_size)
 
 
     
